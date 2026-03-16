@@ -59,7 +59,7 @@ namespace MyExcel {
 		}
 	}
 
-	NumStack::NumStack() : start(NULL, "") { current = &start; }
+	NumStack::NumStack() : start(NULL, 0) { current = &start; }
 	void NumStack::push(double s) {
 		Node* n = new Node(current, s);
 		current = n;

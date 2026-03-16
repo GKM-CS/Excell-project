@@ -123,10 +123,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cell.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="table.cpp" />
     <ClCompile Include="utility.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cell.h" />
+    <ClInclude Include="table.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
