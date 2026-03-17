@@ -175,14 +175,13 @@ namespace MyExcel {
 		for (int i = 0; i < max_row_size; i++) {
 			for (int j = 0; j < max_col_size; j++) {
 				if (j >= 1) s += ",";
-				// CSV 파일 규칙에 따라 문자열에 큰따옴표가 포함되어 있다면 "" 로
-				// 치환하다.
+				// CSV 파일 규칙에 따라 문자열에 큰따옴표가 포함되어 있다면 "" 로 치환
 				string temp;
 				if (data_table[i][j]) temp = data_table[i][j]->stringify();
 
 				for (int k = 0; k < temp.length(); k++) {
 					if (temp[k] == '"') {
-						// k 의 위치에 " 를 한 개 더 집어넣는다.
+						// k 의 위치에 " 를 한 개 더 넣음
 						temp.insert(k, 1, '"');
 
 						// 이미 추가된 " 를 다시 확인하는 일이 없게 하기 위해

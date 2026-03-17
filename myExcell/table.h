@@ -2,7 +2,6 @@
 
 #include <ostream>
 #include "utils.h"
-#include "cell.h"
 
 namespace MyExcel {
 	
