@@ -8,7 +8,7 @@ namespace MyExcel {
 	Table::Table(int max_row_size, int max_col_size)
 		: max_row_size(max_row_size), max_col_size(max_col_size) {
 		data_table = new Cell * *[max_row_size];
-		for (int i = 0; i < max_row_size; i++) {
+		for (int i = 0; i < max_row_size; i++) {  
 			data_table[i] = new Cell * [max_col_size];
 			for (int j = 0; j < max_col_size; j++) {
 				data_table[i][j] = NULL;
