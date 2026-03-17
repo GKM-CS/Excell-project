@@ -53,4 +53,18 @@ namespace MyExcel {
 		// 텍스트로 표를 꺠끗하게 출력
 		string print_table();
 	};
+
+	class HtmlTable : public Table {
+	public:
+		HtmlTable(int row, int col);
+
+		string print_table();
+	};
+
+	class CSVTable : public Table {
+	public:
+		CSVTable(int row, int col);
+		
+		string print_table();
+	};
 }
