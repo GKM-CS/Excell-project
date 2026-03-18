@@ -36,8 +36,8 @@ namespace MyExcel {
 	}
 	int Table::to_numeric(const string& s) {
 		// Cell  이름으로 받는다.
-		int row = s[0] - 'A';
-		int col = atoi(s.c_str() + 1) - 1;
+		int col = s[0] - 'A';
+		int row = atoi(s.c_str() + 1) - 1;
 
 		if (row < max_row_size && col < max_col_size) {
 			if (data_table[row][col]) {
@@ -54,8 +54,8 @@ namespace MyExcel {
 	}
 	string Table::stringify(const string& s) {
 		// Cell 이름으로 받음
-		int row = s[0] - 'A';
-		int col = atoi(s.c_str() + 1) - 1;
+		int col = s[0] - 'A';
+		int row = atoi(s.c_str() + 1) - 1;
 
 		if (row < max_row_size && col < max_col_size) {
 			if (data_table[row][col]) {

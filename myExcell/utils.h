@@ -1,6 +1,7 @@
 ﻿#pragma once
 
 #include <string>
+#include <ctime>
 using std::string;
 
 namespace MyExcel {
